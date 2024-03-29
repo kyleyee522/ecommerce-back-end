@@ -72,7 +72,7 @@ router.delete('/:id', async (req, res) => {
 			},
 		});
 		if (category === 0) {
-			return res.status(404).json({ msg: 'no such Category exists!' });
+			return res.status(404).json({ msg: 'no such category exists!' });
 		}
 		res.json(category);
 	} catch (err) {
